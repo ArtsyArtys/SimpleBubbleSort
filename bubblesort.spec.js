@@ -1,8 +1,5 @@
 describe('Bubble Sort', function() {
   beforeEach(function() {
-    // testBubbleSort = {
-    //   swap
-    // };
     spyOn(swapObj, 'swap').and.callThrough();
   });
 
@@ -28,8 +25,6 @@ describe('Bubble Sort', function() {
   it('Should work with negative numbers', function() {
     let testArr = [-5, -10, 20, 100];
     expect(bubbleSort(testArr)).toEqual([-10, -5, 20, 100]);
-    // console.log('swap function', swap);
-    // console.log('testbubblesort', testBubbleSort);
   });
 
   it('Should have a function called swap.', function() {
