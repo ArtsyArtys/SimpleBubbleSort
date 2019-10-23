@@ -1,4 +1,4 @@
-describe('split function', function() {
+xdescribe('split function', function() {
   it('should return an array', function() {
     expect(Array.isArray(split([1, 2, 3, 4]))).toEqual(true);
   });
@@ -17,7 +17,7 @@ describe('split function', function() {
   });
 });
 
-describe('merge function', function() {
+xdescribe('merge function', function() {
   it('Should return a single sorted array', function() {
     expect(merge([1, 3], [2, 4])).toEqual([1, 2, 3, 4]);
   });
@@ -27,7 +27,7 @@ describe('merge function', function() {
 });
 
 describe('mergeSort function', function() {
-  it('Should return an array', function() {
+  xit('Should return an array', function() {
     expect(Array.isArray(mergeSort([1, 2, 3, 4]))).toEqual(true);
   });
 
@@ -36,12 +36,12 @@ describe('mergeSort function', function() {
     expect(mergeSort(testArr)).toEqual([12, 20, 33, 55, 100, 200]);
   });
 
-  it('Should sort an array of strings', function() {
+  xit('Should sort an array of strings', function() {
     let testArr = ['bcd', 'abc', 'x', 'p', 'daring'];
     expect(mergeSort(testArr)).toEqual(['abc', 'bcd', 'daring', 'p', 'x']);
   });
 
-  it('Should work with negative numbers', function() {
+  xit('Should work with negative numbers', function() {
     let testArr = [-5, -10, 20, 100];
     expect(mergeSort(testArr)).toEqual([-10, -5, 20, 100]);
   });
